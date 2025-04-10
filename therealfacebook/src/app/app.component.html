@@ -20,8 +20,10 @@
       <a href="" (click)="btnclick($event)">Forgotten password?</a>
     </p>
   </div>
-  <app-elfelejtett />
 </div>
 <div class="container" *ngIf="forgotpass">
-  <span (click)="btnclick($event)">Go back</span>
+  <app-jelszo-emlekezteto [questionCount]="1"></app-jelszo-emlekezteto>
+  <div style="width: 100%; text-align: center">
+    <span (click)="btnclick($event)" style="text-align: center">Go back</span>
+  </div>
 </div>

@@ -9,7 +9,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class JelszoEmlekeztetoComponent implements OnInit {
   ngOnInit(): void {
-    this.questionList = funkyQuestions.slice(0, this.questionCount);
+    this.questionList = [
+      funkyQuestions[Math.floor(Math.random() * funkyQuestions.length)],
+    ];
   }
   @Input() questionCount!: number;
 
