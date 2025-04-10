@@ -1,0 +1,55 @@
+.logo {
+    margin-top: 200px;
+    margin-left: 250px;
+    color: rgb(50, 101, 222);
+    font-family: "Inter", sans-serif;
+    font-size: 75px;
+    font-weight: 800;
+ }
+ .bottomtext {
+    font-size: 30px;
+    margin-left: 250px;
+    margin-top: 0px;
+
+
+ }
+ .container {
+    font-family: "Inter", sans-serif;
+
+ }
+ .bottomtext2 {
+    font-size: 15px;
+ }
+ .login {
+    position: absolute;
+    top: 150px;
+    left: 850px;
+    background-color: white;
+    padding: 25px;
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    color: rgb(50, 101, 222);
+
+ }
+ input {
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+    height: 40px;
+    font-size: 20px;
+
+ }
+ .button {
+    justify-content: center;
+    background-color: rgb(50, 101, 222);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+ }
+ .forget {
+    text-align: center;
+ }
