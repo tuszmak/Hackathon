@@ -1,3 +1,9 @@
 input {
-    width: 547px;
-}
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+    height: 40px;
+    font-size: 20px;
+
+ }

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="!forgotpass">
   <div class="logo">facebook</div>
   <p class="bottomtext">
     Facebook never stores any of your data <br />
@@ -13,11 +13,15 @@
       placeholder="Email address or phone number"
       class="input"
     /><br />
-    <input type="text" placeholder="Password" class="input" />
+    <!-- <input type="text" placeholder="Password" class="input"> -->
+    <app-jelszo />
     <div class="button">Log in</div>
     <p class="forget">
-      <a href="">Forgotten password?</a>
+      <a href="" (click)="btnclick($event)">Forgotten password?</a>
     </p>
   </div>
   <app-elfelejtett />
+</div>
+<div class="container" *ngIf="forgotpass">
+  <span (click)="btnclick($event)">Go back</span>
 </div>
