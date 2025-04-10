@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="!forgotpass">
   <div class="logo">
     facebook
   </div>
@@ -8,12 +8,17 @@
   </p>
   <div class="login">
     <input type="text" placeholder="Email address or phone number" class="input"><br>
-    <input type="text" placeholder="Password" class="input">
+    <!-- <input type="text" placeholder="Password" class="input"> -->
+     <app-jelszo />
     <div class="button">
       Log in
     </div>
     <p class="forget">
-      <a href="">Forgotten password?</a>
+      <a href="" (click)="btnclick($event)">Forgotten password?</a>
     </p>
   </div>
+</div>
+<div class="container" *ngIf="forgotpass">
+  
+<span (click)="btnclick($event)">Go back</span>
 </div>
