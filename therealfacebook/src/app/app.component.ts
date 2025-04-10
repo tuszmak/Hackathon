@@ -6,7 +6,7 @@ import { JelszoComponent } from './jelszo/jelszo.component';
   selector: 'app-root',
   imports: [RouterOutlet, JelszoComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'therealfacebook';
